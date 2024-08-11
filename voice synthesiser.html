@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="texttovoice.css">
+    <title>Voice Synthesisor</title>
+</head>
+<body>
+    <h1>Text to Voice</h1>
+    <div>
+        <textarea id="text" type="text"> Enter Text </textarea>
+        <button onclick="speak()">Speak</button>
+    </div>
+    <script>
+        function speak(){
+            text = document.getElementById("text").value
+            utterence = new SpeechSynthesisUtterance(text)
+            speechSynthesis.speak(utterence)
+        }
+    </script>
+</body>
+</html>

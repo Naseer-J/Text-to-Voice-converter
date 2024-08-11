@@ -1,0 +1,23 @@
+body{
+    background-color: beige;
+}
+h1{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    display: block;
+    border-radius: 10% 50% 10% 50%;
+    background-color: rgba(203, 156, 247, 0.632);
+}
+
+button:hover{
+    transform: translateZ(100px);
+    transform: rotateZ(90deg);
+    transition: 0.5s ease-in;
+}
